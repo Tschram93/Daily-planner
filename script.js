@@ -42,7 +42,14 @@ for (i = 0; i < hours.length; i++) {
     console.log(hours[i]);
 }
 
+//Displays input
+row10amInput.value = localStorage.getItem('saved');
 
+// Add eventlistener and saves the input data
+//hour#.addEventListener('click', userDataStore#);
 
+// Saves to local storage
+function savedInfo() {
+    localStorage.setItem('saved0', row9amInput.value);
+};
 
-// 
