@@ -1,7 +1,12 @@
 moment().format('dddd');
 
+const body = document.body;
+const div = document.createElement('div')
+const timeblock = document.body.querySelector('.time-block')
 var today = moment().format("MMM Do YY");
-var current = moment().format("")
+var current = moment().format("");
+let localData = window.localStorage;
+// Establish variables for each hour using moment.js
 
 $(function () {});
 
@@ -10,19 +15,19 @@ $(function () {});
 // Add hours to the schedule
 var hours = [{
         time: '9:00 AM',
-        event: ''
+        // event: ''
     },
     {
         time: '10:00 AM',
-        event: ''
+        // event: ''
     },
     {
         time: '11:00 AM',
-        event: ''
+        // event: ''
     },
     {
         time: '12:00 PM',
-        event: ''
+        // event: ''
     },
     {
         time: '1:00 PM',
@@ -30,19 +35,19 @@ var hours = [{
     },
     {
         time: '2:00 PM',
-        event: ''
+        // event: ''
     },
     {
         time: '3:00 PM',
-        event: ''
+        // event: ''
     },
     {
         time: '4:00 PM',
-        event: ''
+        // event: ''
     },
     {
         time: '5:00 PM',
-        event: ''
+        // event: ''
     },
 ];
 
@@ -56,8 +61,8 @@ let now = new Date().getHours();
 
 // Grid and rows
 for (i = 0; i < hours.length; i++) {
-    $(`<div class='col-2 time-frame'></div>`)
-        .text(hours[i])
+    $(`<div class='col-2 time-block'></div>`)
+        .text(hours[i].time)
         .appendTo('.row');
     $(`<textarea class='col-8 note-input' id='input-${i}'></textarea>`)
         .attr('placeholder', 'Enter task here')
@@ -65,8 +70,14 @@ for (i = 0; i < hours.length; i++) {
     $(`<button class='col-2 btn btn-secondary saveBtn' id='hour${i}'></button>`)
         .text('save')
         .appendTo('.row');
-    console.log(hours[i]);
+    console.log(hours[i].time);
+
 }
+
+// connect hours variable into innertext of time-block
+const hoursInsert =
+    append.timeblock.innerHTML(hours);
+
 
 //Displays input
 row10amInput.value = localStorage.getItem('saved');

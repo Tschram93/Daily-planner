@@ -1,21 +1,22 @@
 body {
+  background-color: rgb(173, 180, 187);
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
 textarea {
-  background: transparent;
-  border: none;
-  resize: none;
+  background: #ffffff;
+  border: 1px solid black;
   color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
+  placeholder: 'Enter Text Here';
+  resize: none;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: #06aed5;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -26,8 +27,11 @@ textarea {
 }
 
 .time-block {
+  background-color: #90ee90;
+  border: 1px solid black;
+  border-radius: 15px 0 0 15px;
+  justify-content: center;
   text-align: center;
-  border-radius: 15px;
 }
 
 .row {
