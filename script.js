@@ -1,5 +1,22 @@
 moment().format('dddd');
 
+//determine whether .currentTime is beyond .past timeblocks.
+// let timeNow = (moment().format("h:mm:ss a"));
+
+// function timeCheck() {
+//     for (var i = 0; i < hours.length; i++) {
+//         (Math.floor(Math.random[]))
+//     }
+//     if (timeNow < timeCheck) {
+//         document.querySelector('.time-block').style.color = "red";
+//     }
+// };
+// console.log(timeCheck);
+
+// if (timeNow > 'forLoop of hours on timeBlock') {
+
+// };
+
 const body = document.body;
 const div = document.createElement('div')
 const timeblock = document.body.querySelector('.time-block')
@@ -75,8 +92,8 @@ for (i = 0; i < hours.length; i++) {
 }
 
 // connect hours variable into innertext of time-block
-const hoursInsert =
-    append.timeblock.innerHTML(hours);
+// const hoursInsert =
+//     append.timeblock.innerHTML(hours);
 
 
 //Displays input
